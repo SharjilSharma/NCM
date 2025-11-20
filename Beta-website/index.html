@@ -16,11 +16,11 @@
                 <span>Government of India</span>
             </div>
             <div class="top-right">
-                <a href="#main" class="skip-link">Skip to Main Content</a>
+                <a href="#services" class="skip-link">Skip to Main Content</a>
                 <div class="text-size">
-                    <span>-A</span>
-                    <span class="active">A</span>
-                    <span>A+</span>
+                    <button onclick="changeFontSize('small')">-A</button>
+                    <button class="active" onclick="changeFontSize('normal')">A</button>
+                    <button onclick="changeFontSize('large')">A+</button>
                 </div>
                 <div class="language">
                     <span class="material-icons-outlined">language</span>
@@ -44,16 +44,19 @@
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#about">About Us</a></li>
-                    <li><a href="#menu1">Menu 1</a></li>
-                    <li><a href="#menu2">Menu 2</a></li>
-                    <li><a href="#menu3">Menu 3</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#popular-cases">Popular Cases</a></li>
+                    <li><a href="#how-it-works">How it Works</a></li>
                 </ul>
             </nav>
             <div class="header-right">
                 <a href="#" class="cta-button">CTA</a>
-                <button class="search-btn">
-                    <span class="material-icons-outlined">search</span>
-                </button>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <button class="search-btn" onclick="toggleSearch()">
+                        <span class="material-icons-outlined">search</span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -155,19 +158,19 @@
             </div>
             <div class="about-images">
                 <div class="image-placeholder-large">
-                    <span>IMAGE<br>282 x 282</span>
+                    <img src="aunties1.jpg" alt="Women Empowerment">
                 </div>
                 <div class="image-placeholder-medium">
-                    <span>IMAGE<br>218 x 218</span>
+                    <img src="MinistryImage1.jpeg" alt="Ministry Building">
                 </div>
                 <div class="image-placeholder-small">
-                    <span>IMAGE<br>206 x 206</span>
+                    <img src="MinistryImage2.jpeg" alt="Government Office">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="services-section">
+    <section id="services" class="services-section">
         <div class="container-large">
             
             <div class="section-header">
@@ -176,65 +179,65 @@
             </div>
             
             <div class="category-grid">
-                <a href="#" class="category-card">
-                    <div class="card-content">
-                        <span class="material-icons-outlined icon">person</span>
-                        <span>Citizen Services</span>
-                    </div>
-                    <span class="material-icons-outlined">chevron_right</span>
-                </a>
-                <a href="#" class="category-card">
-                    <div class="card-content">
-                        <span class="material-icons-outlined icon">school</span>
-                        <span>Education and Scholarships</span>
-                    </div>
-                    <span class="material-icons-outlined">chevron_right</span>
-                </a>
-                <a href="#" class="category-card">
-                    <div class="card-content">
-                        <span class="material-icons-outlined icon">health_and_safety</span>
-                        <span>Health and Welfare</span>
-                    </div>
-                    <span class="material-icons-outlined">chevron_right</span>
-                </a>
-                <a href="#" class="category-card">
-                    <div class="card-content">
-                        <span class="material-icons-outlined icon">commute</span>
-                        <span>Transport and Travel</span>
-                    </div>
-                    <span class="material-icons-outlined">chevron_right</span>
-                </a>
-                <a href="#" class="category-card">
-                    <div class="card-content">
-                        <span class="material-icons-outlined icon">account_balance</span>
-                        <span>Government Employees</span>
-                    </div>
-                    <span class="material-icons-outlined">chevron_right</span>
-                </a>
-                <a href="#" class="category-card">
-                    <div class="card-content">
-                        <span class="material-icons-outlined icon">business_center</span>
-                        <span>Business and Commerce</span>
-                    </div>
-                    <span class="material-icons-outlined">chevron_right</span>
-                </a>
-                <a href="#" class="category-card">
-                    <div class="card-content">
-                        <span class="material-icons-outlined icon">landscape</span>
-                        <span>Land and Property</span>
-                    </div>
-                    <span class="material-icons-outlined">chevron_right</span>
-                </a>
-                <a href="#" class="category-card">
+                <a href="indian-constitution-women.html" class="category-card">
                     <div class="card-content">
                         <span class="material-icons-outlined icon">gavel</span>
-                        <span>Public Utilities</span>
+                        <span>Indian Constitution and Women</span>
+                    </div>
+                    <span class="material-icons-outlined">chevron_right</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="card-content">
+                        <span class="material-icons-outlined icon">favorite</span>
+                        <span>Reproductive Rights</span>
+                    </div>
+                    <span class="material-icons-outlined">chevron_right</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="card-content">
+                        <span class="material-icons-outlined icon">balance</span>
+                        <span>Women Rights under Bharatiya Nyaya Suraksha Sanhita</span>
+                    </div>
+                    <span class="material-icons-outlined">chevron_right</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="card-content">
+                        <span class="material-icons-outlined icon">security</span>
+                        <span>Sexual Offences Against Women</span>
+                    </div>
+                    <span class="material-icons-outlined">chevron_right</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="card-content">
+                        <span class="material-icons-outlined icon">volunteer_activism</span>
+                        <span>Offences Related to Marriage</span>
+                    </div>
+                    <span class="material-icons-outlined">chevron_right</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="card-content">
+                        <span class="material-icons-outlined icon">computer</span>
+                        <span>Cyber Crimes Against Women</span>
+                    </div>
+                    <span class="material-icons-outlined">chevron_right</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="card-content">
+                        <span class="material-icons-outlined icon">report</span>
+                        <span>Other Offences Relating to Women</span>
+                    </div>
+                    <span class="material-icons-outlined">chevron_right</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="card-content">
+                        <span class="material-icons-outlined icon">more_horiz</span>
+                        <span>Others</span>
                     </div>
                     <span class="material-icons-outlined">chevron_right</span>
                 </a>
             </div>
 
-            <div class="section-header">
+            <div id="popular-cases" class="section-header">
                 <h2>Popular Cases</h2>
             </div>
             
@@ -284,7 +287,7 @@
         </div>
     </section>
 
-    <section class="how-it-works-section">
+    <section id="how-it-works" class="how-it-works-section">
         <div class="container-small">
             <div class="section-header">
                 <h2>How It Works</h2>
@@ -488,6 +491,17 @@
     </footer>
 
 
+    <script>
+        function changeFontSize(size) {
+            document.querySelectorAll('.text-size button').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            const body = document.body;
+            body.classList.remove('font-small', 'font-normal', 'font-large');
+            body.classList.add('font-' + size);
+        }
+    </script>
+    <script src="script.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empower Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-left">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/20px-Flag_of_India.svg.png" alt="India Flag" class="flag">
+                <span>Government of India</span>
+            </div>
+            <div class="top-right">
+                <a href="#services" class="skip-link">Skip to Main Content</a>
+                <div class="text-size">
+                    <button onclick="changeFontSize('small')">-A</button>
+                    <button class="active" onclick="changeFontSize('normal')">A</button>
+                    <button onclick="changeFontSize('large')">A+</button>
+                </div>
+                <div class="language">
+                    <span class="material-icons-outlined">language</span>
+                    <span>Language</span>
+                </div>
+                <div class="more-links">
+                    <span class="material-icons-outlined">more_vert</span>
+                    <span>More</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/45px-Emblem_of_India.svg.png" alt="Govt Emblem" class="emblem">
+                <h1>Empower Hub</h1>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#popular-cases">Popular Cases</a></li>
+                    <li><a href="#how-it-works">How it Works</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="#" class="cta-button">CTA</a>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <button class="search-btn" onclick="toggleSearch()">
+                        <span class="material-icons-outlined">search</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <div class="hero-background">
+                </div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h2>Access Your</h2>
+                    <h1>Rights</h1>
+                    <h2>Secure Your</h2>
+                    <h1>Future</h1>
+                </div>
+                
+                <div class="info-box">
+                    <div class="info-tabs">
+                        <button class="tab-link active" data-tab="whats-new">What's new</button>
+                        <button class="tab-link" data-tab="important-info">Important information</button>
+                    </div>
+                    
+                    <div id="whats-new" class="tab-content active">
+                        <ul>
+                            <li>
+                                <div class="item-text">
+                                    <p>Description of what's new 2 goes here.</p>
+                                    <span>DD/MM/YYYY</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-text">
+                                    <p>Description of what's new 2 goes here.</p>
+                                    <span>DD/MM/YYYY</span>
+                                </div>
+                                <span class="doc-type">Document Type</span>
+                            </li>
+                            <li>
+                                <div class="item-text">
+                                    <p>Description of what's new 2 goes here.</p>
+                                    <span>DD/MM/YYYY</span>
+                                </div>
+                                <span class="doc-type">Document Type</span>
+                            </li>
+                            <li>
+                                <div class="item-text">
+                                    <p>Description of what's new 2 goes here.</p>
+                                    <span>12/09/2023</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+
+                    <div id="important-info" class="tab-content">
+                        <ul>
+                            <li>
+                                <div class="item-text">
+                                    <p>Important information 1 goes here.</p>
+                                    <span>DD/MM/YYYY</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-text">
+                                    <p>Important information 2 goes here.</p>
+                                    <span>DD/MM/YYYY</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                </div>
+            </div>
+            <div class="explore-btn-container">
+                <button class="explore-btn">Explore</button>
+            </div>
+        </section>
+    </main>
+
+    <section class="service-finder-cta">
+        <div class="container">
+            <div class="service-finder-text">
+                <h2>Find the right service for you</h2>
+                <p>Tell us about yourself to find out the right services for you</p>
+                <button class="btn btn-light">Get Started</button>
+            </div>
+            <div class="service-finder-map">
+                </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-text">
+                <h2>About Ministry/Department</h2>
+                <p>We are dedicated to serving the public by [brief description of the ministry/department's mission]. Our team of experienced professionals is committed to [mention a few key objectives or areas of focus].</p>
+                <p>We believe in [core values or principles the ministry/department upholds]. We are here to answer your questions and provide you with the information and resources you need.</p>
+                <button class="btn btn-outline">Know More</button>
+            </div>
+            <div class="about-images">
+                <div class="image-placeholder-large">
+                    <img src="aunties1.jpg" alt="Women Empowerment">
+                </div>
+                <div class="image-placeholder-medium">
+                    <img src="MinistryImage1.jpeg" alt="Ministry Building">
+                </div>
+                <div class="image-placeholder-small">
+                    <img src="MinistryImage2.jpeg" alt="Government Office">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container-large">
+            
+            <div class="section-header">
+                <span class="tag-explore">Explore</span>
+                <h2>Explore Services by Category</h2>
+            </div>
+            
+            <div class="category-grid">
+                <a href="indian-constitution-women.html" class="category-card">
+                    <div class="card-content">
+                        <span class="material-icons-outlined icon">gavel</span>
+                        <span>Indian Constitution and Women</span>
+                    </div>
+                    <span class="material-icons-outlined">chevron_right</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="card-content">
+                        <span class="material-icons-outlined icon">favorite</span>
+                        <span>Reproductive Rights</span>
+                    </div>
+                    <span class="material-icons-outlined">chevron_right</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="card-content">
+                        <span class="material-icons-outlined icon">balance</span>
+                        <span>Women Rights under Bharatiya Nyaya Suraksha Sanhita</span>
+                    </div>
+                    <span class="material-icons-outlined">chevron_right</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="card-content">
+                        <span class="material-icons-outlined icon">security</span>
+                        <span>Sexual Offences Against Women</span>
+                    </div>
+                    <span class="material-icons-outlined">chevron_right</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="card-content">
+                        <span class="material-icons-outlined icon">volunteer_activism</span>
+                        <span>Offences Related to Marriage</span>
+                    </div>
+                    <span class="material-icons-outlined">chevron_right</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="card-content">
+                        <span class="material-icons-outlined icon">computer</span>
+                        <span>Cyber Crimes Against Women</span>
+                    </div>
+                    <span class="material-icons-outlined">chevron_right</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="card-content">
+                        <span class="material-icons-outlined icon">report</span>
+                        <span>Other Offences Relating to Women</span>
+                    </div>
+                    <span class="material-icons-outlined">chevron_right</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="card-content">
+                        <span class="material-icons-outlined icon">more_horiz</span>
+                        <span>Others</span>
+                    </div>
+                    <span class="material-icons-outlined">chevron_right</span>
+                </a>
+            </div>
+
+            <div id="popular-cases" class="section-header">
+                <h2>Popular Cases</h2>
+            </div>
+            
+            <div class="popular-cases-grid">
+                <article class="case-card" style="--case-bg: #F3F9FF;">
+                    <div class="case-icon-wrapper" style="--icon-bg: #E3F2FD;">
+                        <span class="material-icons-outlined" style="color: #0B7BCB;">home</span>
+                    </div>
+                    <div class="case-content">
+                        <span class="case-category">Health & Family Welfare</span>
+                        <h3>Birth Certificate</h3>
+                        <p>Online • Time - 30 days</p>
+                    </div>
+                </article>
+                <article class="case-card" style="--case-bg: #F5F9F4;">
+                    <div class="case-icon-wrapper" style="--icon-bg: #E3F2E2;">
+                        <span class="material-icons-outlined" style="color: #34842E;">person_pin</span>
+                    </div>
+                    <div class="case-content">
+                        <span class="case-category">Deputy Commissioner</span>
+                        <h3>Income Certificate</h3>
+                        <p>Online • Time - 30 days</p>
+                    </div>
+                </article>
+                <article class="case-card" style="--case-bg: #FDF6F7;">
+                    <div class="case-icon-wrapper" style="--icon-bg: #FBE5E7;">
+                        <span class="material-icons-outlined" style="color: #D32F2F;">directions_car</span>
+                    </div>
+                    <div class="case-content">
+                        <span class="case-category">Transport</span>
+                        <h3>Driving License</h3>
+                        <p>Online • Time - 30 days</p>
+                    </div>
+                </article>
+                <article class="case-card" style="--case-bg: #FEFBF2;">
+                    <div class="case-icon-wrapper" style="--icon-bg: #FFF6DE;">
+                        <span class="material-icons-outlined" style="color: #F9A825;">school</span>
+                    </div>
+                    <div class="case-content">
+                        <span class="case-category">Education</span>
+                        <h3>NoC for setting up CB</h3>
+                        <p>Online • Time - 30 days</p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container-small">
+            <div class="section-header">
+                <h2>How It Works</h2>
+            </div>
+            
+            <div class="how-it-works-timeline">
+                <div class="timeline-dot"></div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-line"></div>
+            </div>
+
+            <div class="how-it-works-grid">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <span class="material-icons-outlined">person_search</span>
+                    </div>
+                    <h3>Heading 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <span class="material-icons-outlined">travel_explore</span>
+                    </div>
+                    <h3>Heading 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <span classa="material-icons-outlined">task_alt</span>
+                    </div>
+                    <h3>Heading 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <span class="material-icons-outlined">receipt_long</span>
+                    </div>
+                    <h3>Heading 4</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <div class="container-small">
+            <div class="faq-header">
+                <div>
+                    <span class="tag-faq">FAQs</span>
+                    <h2>Have any questions?</h2>
+                </div>
+                <a href="#" class="btn btn-outline-dark">View All FAQs</a>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What are notified services?</span>
+                        <span class="material-icons-outlined">add</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed-non-urna-nec-ante-efficitur-convallis-quis-ac-libero.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is First Appeal?</span>
+                        <span class="material-icons-outlined">add</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed-non-urna-nec-ante-efficitur-convallis-quis-ac-libero.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Who is an Appellate Authority?</span>
+                        <span class="material-icons-outlined">add</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed-non-urna-nec-ante-efficitur-convallis-quis-ac-libero.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I file my First Appeal?</span>
+                        <span class="material-icons-outlined">add</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed-non-urna-nec-ante-efficitur-convallis-quis-ac-libero.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I file an Appeal to the Commission?</span>
+                        <span class="material-icons-outlined">add</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed-non-urna-nec-ante-efficitur-convallis-quis-ac-libero.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="support-band">
+            <div class="container">
+                <div class="support-text">
+                    <h2>Need Support?</h2>
+                    <p>Reach out to us and we will get back to you</p>
+                </div>
+                <a href="#" class="btn btn-light-outline">
+                    <span>Get in touch</span>
+                    <span class="material-icons-outlined">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="main-footer">
+            <div class="container">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="https://via.placeholder.com/50" alt="MSPSDC Logo" class="footer-emblem"> 
+                        <span>MSPSDC</span>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><img src="https://via.placeholder.com/32" alt="Social Icon"></a>
+                        <a href="#"><img src="https://via.placeholder.com/32" alt="Social Icon"></a>
+                        <a href="#"><img src="https://via.placeholder.com/32" alt="Social Icon"></a>
+                    </div>
+                    <span class="last-updated">Last updated: 02-05-24</span>
+                </div>
+
+                <div class="footer-col">
+                    <h4>MSPSDC</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Dashboards</a></li>
+                        <li><a href="#">Department</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Citizens</h4>
+                    <ul>
+                        <li><a href="#">File First Appeal</a></li>
+                        <li><a href="#">Appeal to Commission</a></li>
+                        <li><a href="#">Department</a></li>
+                        <li><a href="#">Notify Your Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Important Links</h4>
+                    <ul>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Right to Information</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <address>
+                        Room 17, Horse Shoe<br>
+                        Building, Lachumiere,<br>
+                        Shillong, Meghalaya<br>
+                        793001
+                    </address>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-bar">
+            <div class="container">
+                <span>Copyright © 2024 - All Rights Reserved - MSPSDC</span>
+                <div class="policy-links">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="chat-bot">
+            <span class="tooltip">Hi! I am MeghLeo. Ask Me Anything!</span>
+            <span class="material-icons-outlined">support_agent</span>
+        </button>
+        <button class="accessibility-toggle">
+            <span class="material-icons-outlined">accessibility_new</span>
+        </button>
+         <button class="color-toggle">
+            <span class="material-icons-outlined">contrast</span>
+        </button>
+
+    </footer>
+
+
+    <script>
+        function changeFontSize(size) {
+            document.querySelectorAll('.text-size button').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            const body = document.body;
+            body.classList.remove('font-small', 'font-normal', 'font-large');
+            body.classList.add('font-' + size);
+        }
+    </script>
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
