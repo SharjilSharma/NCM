@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Test - Empower Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="auto-translate.js" defer></script>
+    <script src="translate-buttons.js" defer></script>
+    <style>
+        .test-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .test-section {
+            margin: 2rem 0;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .language-controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 10000;
+        }
+        .lang-btn {
+            margin: 0.25rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid #ddd;
+            background: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .lang-btn:hover {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Controls -->
+    <div class="language-controls">
+        <h4>Test Language Switching:</h4>
+        <button class="lang-btn" onclick="changeLanguage('en')">English</button>
+        <button class="lang-btn" onclick="changeLanguage('hi')">हिंदी</button>
+        <button class="lang-btn" onclick="changeLanguage('ur')">اردو</button>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-left">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/20px-Flag_of_India.svg.png" alt="India Flag" class="flag">
+                <span data-translate="Government of India">Government of India</span>
+            </div>
+            <div class="top-right">
+                <a href="#main" class="skip-link" data-translate="Skip to Main Content">Skip to Main Content</a>
+                <div class="text-size">
+                    <button onclick="changeFontSize('decrease')">-A</button>
+                    <button class="active" onclick="changeFontSize('reset')">A</button>
+                    <button onclick="changeFontSize('increase')">A+</button>
+                </div>
+                <div class="language">
+                    <span class="material-icons-outlined">language</span>
+                    <span data-translate="Language">Language</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="test-container">
+        <h1 data-translate="Language Test Page">Language Test Page</h1>
+        
+        <div class="test-section">
+            <h2 data-translate="Navigation Elements">Navigation Elements</h2>
+            <p data-translate="Home">Home</p>
+            <p data-translate="About Us">About Us</p>
+            <p data-translate="Services">Services</p>
+            <p data-translate="Popular Cases">Popular Cases</p>
+            <p data-translate="How it Works">How it Works</p>
+        </div>
+
+        <div class="test-section">
+            <h2 data-translate="Hero Section Content">Hero Section Content</h2>
+            <h3 data-translate="Access Your">Access Your</h3>
+            <h1 data-translate="Rights">Rights</h1>
+            <h3 data-translate="Secure Your">Secure Your</h3>
+            <h1 data-translate="Future">Future</h1>
+        </div>
+
+        <div class="test-section">
+            <h2 data-translate="Service Content">Service Content</h2>
+            <p data-translate="Find the right service for you">Find the right service for you</p>
+            <p data-translate="Tell us about yourself to find out the right services for you">Tell us about yourself to find out the right services for you</p>
+            <button data-translate="Get Started">Get Started</button>
+        </div>
+
+        <div class="test-section">
+            <h2 data-translate="About Section">About Section</h2>
+            <h3 data-translate="About Ministry/Department">About Ministry/Department</h3>
+            <p data-translate="We are dedicated to serving the public by [brief description of the ministry/department's mission]. Our team of experienced professionals is committed to [mention a few key objectives or areas of focus].">We are dedicated to serving the public by [brief description of the ministry/department's mission]. Our team of experienced professionals is committed to [mention a few key objectives or areas of focus].</p>
+            <button data-translate="Know More">Know More</button>
+        </div>
+
+        <div class="test-section">
+            <h2 data-translate="Categories">Categories</h2>
+            <p data-translate="Explore Services by Category">Explore Services by Category</p>
+            <p data-translate="Indian Constitution and Women">Indian Constitution and Women</p>
+            <p data-translate="Reproductive Rights">Reproductive Rights</p>
+        </div>
+
+        <div class="test-section">
+            <h2>Form Elements</h2>
+            <input type="text" placeholder="Search..." data-translate-placeholder="Search...">
+            <br><br>
+            <button data-translate="Explore">Explore</button>
+            <button data-translate="View All">View All</button>
+        </div>
+    </div>
+
+    <script>
+        // Add some test content dynamically to test auto-detection
+        setTimeout(() => {
+            const testDiv = document.createElement('div');
+            testDiv.className = 'test-section';
+            testDiv.innerHTML = `
+                <h2>Dynamically Added Content</h2>
+                <p data-translate="Services">Services</p>
+                <p data-translate="Language">Language</p>
+                <button data-translate="More">More</button>
+            `;
+            document.querySelector('.test-container').appendChild(testDiv);
+            
+            // Re-apply current language to new content
+            if (typeof changeLanguage === 'function' && currentLanguage !== 'en') {
+                changeLanguage(currentLanguage);
+            }
+        }, 2000);
+    </script>
+</body>
+</html>

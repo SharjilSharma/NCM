@@ -6,6 +6,9 @@
     <title>Empower Hub</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="auto-translate.js" defer></script>
+    <script src="translate-buttons.js" defer></script>
 </head>
 <body>
 
@@ -18,9 +21,9 @@
             <div class="top-right">
                 <a href="#services" class="skip-link">Skip to Main Content</a>
                 <div class="text-size">
-                    <button onclick="changeFontSize('small')">-A</button>
-                    <button class="active" onclick="changeFontSize('normal')">A</button>
-                    <button onclick="changeFontSize('large')">A+</button>
+                    <button onclick="changeFontSize('decrease')">-A</button>
+                    <button class="active" onclick="changeFontSize('reset')">A</button>
+                    <button onclick="changeFontSize('increase')">A+</button>
                 </div>
                 <div class="language">
                     <span class="material-icons-outlined">language</span>
@@ -50,9 +53,9 @@
                 </ul>
             </nav>
             <div class="header-right">
-                <a href="#" class="cta-button">CTA</a>
+                <a href="#" class="cta-button" data-translate="CTA">CTA</a>
                 <div class="search-container">
-                    <input type="text" class="search-input" placeholder="Search...">
+                    <input type="text" class="search-input" placeholder="Search..." data-translate-placeholder="Search...">
                     <button class="search-btn" onclick="toggleSearch()">
                         <span class="material-icons-outlined">search</span>
                     </button>
@@ -83,55 +86,55 @@
                         <ul>
                             <li>
                                 <div class="item-text">
-                                    <p>Description of what's new 2 goes here.</p>
+                                    <p data-translate="Description of what's new 2 goes here.">Description of what's new 2 goes here.</p>
                                     <span>DD/MM/YYYY</span>
                                 </div>
                             </li>
                             <li>
                                 <div class="item-text">
-                                    <p>Description of what's new 2 goes here.</p>
+                                    <p data-translate="Description of what's new 2 goes here.">Description of what's new 2 goes here.</p>
                                     <span>DD/MM/YYYY</span>
                                 </div>
-                                <span class="doc-type">Document Type</span>
+                                <span class="doc-type" data-translate="Document Type">Document Type</span>
                             </li>
                             <li>
                                 <div class="item-text">
-                                    <p>Description of what's new 2 goes here.</p>
+                                    <p data-translate="Description of what's new 2 goes here.">Description of what's new 2 goes here.</p>
                                     <span>DD/MM/YYYY</span>
                                 </div>
-                                <span class="doc-type">Document Type</span>
+                                <span class="doc-type" data-translate="Document Type">Document Type</span>
                             </li>
                             <li>
                                 <div class="item-text">
-                                    <p>Description of what's new 2 goes here.</p>
+                                    <p data-translate="Description of what's new 2 goes here.">Description of what's new 2 goes here.</p>
                                     <span>12/09/2023</span>
                                 </div>
                             </li>
                         </ul>
-                        <a href="#" class="view-all">View All</a>
+                        <a href="#" class="view-all" data-translate="View All">View All</a>
                     </div>
 
                     <div id="important-info" class="tab-content">
                         <ul>
                             <li>
                                 <div class="item-text">
-                                    <p>Important information 1 goes here.</p>
+                                    <p data-translate="Important information 1 goes here.">Important information 1 goes here.</p>
                                     <span>DD/MM/YYYY</span>
                                 </div>
                             </li>
                             <li>
                                 <div class="item-text">
-                                    <p>Important information 2 goes here.</p>
+                                    <p data-translate="Important information 2 goes here.">Important information 2 goes here.</p>
                                     <span>DD/MM/YYYY</span>
                                 </div>
                             </li>
                         </ul>
-                        <a href="#" class="view-all">View All</a>
+                        <a href="#" class="view-all" data-translate="View All">View All</a>
                     </div>
                 </div>
             </div>
             <div class="explore-btn-container">
-                <button class="explore-btn">Explore</button>
+                <button class="explore-btn" data-translate="Explore">Explore</button>
             </div>
         </section>
     </main>
@@ -152,8 +155,8 @@
         <div class="container">
             <div class="about-text">
                 <h2>About Ministry/Department</h2>
-                <p>We are dedicated to serving the public by [brief description of the ministry/department's mission]. Our team of experienced professionals is committed to [mention a few key objectives or areas of focus].</p>
-                <p>We believe in [core values or principles the ministry/department upholds]. We are here to answer your questions and provide you with the information and resources you need.</p>
+                <p data-translate="We are dedicated to serving the public by [brief description of the ministry/department's mission]. Our team of experienced professionals is committed to [mention a few key objectives or areas of focus].">We are dedicated to serving the public by [brief description of the ministry/department's mission]. Our team of experienced professionals is committed to [mention a few key objectives or areas of focus].</p>
+                <p data-translate="We believe in [core values or principles the ministry/department upholds]. We are here to answer your questions and provide you with the information and resources you need.">We believe in [core values or principles the ministry/department upholds]. We are here to answer your questions and provide you with the information and resources you need.</p>
                 <button class="btn btn-outline">Know More</button>
             </div>
             <div class="about-images">
